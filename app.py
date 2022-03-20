@@ -32,7 +32,7 @@ def infer_image():
     img_bytes = file.read()
     img = prepare_image(img_bytes)
 
-    return jsonify(prediction=predict_result(img))
+    return jsonify(prediction=predict_result(img)).headers.add('Access-Control-Allow-Origin', '*')
 
 @app.route('/', methods=['GET'])
 def index():
