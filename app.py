@@ -4,6 +4,7 @@ import numpy as np
 from flask import Flask, jsonify, request
 import keras
 from PIL import Image
+from flask_cors import CORS, cross_origin
 model = keras.models.load_model('./best_model.h5')
 
 def prepare_image(img):
@@ -18,6 +19,7 @@ def predict_result(img):
     return str(pred)
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/predict', methods=['POST'])
 def infer_image():
@@ -32,7 +34,7 @@ def infer_image():
     img_bytes = file.read()
     img = prepare_image(img_bytes)
 
-    return jsonify(prediction=predict_result(img)).headers.add('Access-Control-Allow-Origin', '*')
+    return jsonify(prediction=predict_result(img))
 
 @app.route('/', methods=['GET'])
 def index():
