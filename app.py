@@ -1,12 +1,12 @@
 import flask
 import io
 import numpy as np
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request , send_from_directory
 import keras
 from PIL import Image
 from flask_cors import CORS, cross_origin
 model = keras.models.load_model('./best_model.h5')
-
+import os
 def prepare_image(img):
     img = Image.open(io.BytesIO(img))
     img = img.resize((256, 256))
@@ -18,7 +18,7 @@ def predict_result(img):
     pred = np.argmax(model.predict(img))
     return str(pred)
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder="./build")
 CORS(app)
 
 @app.route('/predict', methods=['POST'])
@@ -36,10 +36,13 @@ def infer_image():
 
     return jsonify(prediction=predict_result(img))
 
-@app.route('/', methods=['GET'])
-def index():
-    return 'Machine Learning Inference'
-
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(app.static_folder + '/' + path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
 
 # if __name__ == '__main__':
 #     app.run(debug=True, host='0.0.0.0')
