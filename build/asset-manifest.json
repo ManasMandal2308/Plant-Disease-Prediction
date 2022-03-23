@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ea05a81a.css",
-    "main.js": "/static/js/main.821bb031.js",
+    "main.js": "/static/js/main.bf4ae904.js",
     "static/media/background.png": "/static/media/background.e623053cf7265dedc576.png",
     "static/media/Paper.docx": "/static/media/Paper.7d679a911d66deafec9c.docx",
     "static/media/nit.svg": "/static/media/nit.2fbe492dd5f999a0c5b073b4566b4c13.svg",
@@ -25,10 +25,10 @@
     "index.html": "/index.html",
     "static/media/close.svg": "/static/media/close.5152bcb35e90298fa5088746c9601fd4.svg",
     "main.ea05a81a.css.map": "/static/css/main.ea05a81a.css.map",
-    "main.821bb031.js.map": "/static/js/main.821bb031.js.map"
+    "main.bf4ae904.js.map": "/static/js/main.bf4ae904.js.map"
   },
   "entrypoints": [
     "static/css/main.ea05a81a.css",
-    "static/js/main.821bb031.js"
+    "static/js/main.bf4ae904.js"
   ]
 }
