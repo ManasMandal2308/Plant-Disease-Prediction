@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.512fdac9.css",
-    "main.js": "/static/js/main.f88444d1.js",
+    "main.js": "/static/js/main.eb9d29b9.js",
     "static/media/background.png": "/static/media/background.e623053cf7265dedc576.png",
-    "static/media/Paper.docx": "/static/media/Paper.7d679a911d66deafec9c.docx",
+    "static/media/major.pptx": "/static/media/major.abcfe41e4070c0b3b749.pptx",
     "static/media/nit.svg": "/static/media/nit.2fbe492dd5f999a0c5b073b4566b4c13.svg",
     "static/media/leaf-head.svg": "/static/media/leaf-head.989873bb4d3ed807202a8b6b9ce0de36.svg",
     "static/media/Blueberry.svg": "/static/media/Blueberry.6c4aa0fe8bf96d19c8cd.svg",
-    "static/media/Grape.svg": "/static/media/Grape.84384025295901451c69.svg",
+    "static/media/Grape.svg": "/static/media/Grape.6c4aa0fe8bf96d19c8cd.svg",
     "static/media/camera.svg": "/static/media/camera.6663b1119c12b27b0e94382806e4828e.svg",
     "static/media/Tomato.svg": "/static/media/Tomato.c52aa89b4b0348e6ab84.svg",
     "static/media/about.svg": "/static/media/about.4ea3eda3e056bd2be23b394889507d24.svg",
@@ -25,10 +25,10 @@
     "index.html": "/index.html",
     "static/media/close.svg": "/static/media/close.5152bcb35e90298fa5088746c9601fd4.svg",
     "main.512fdac9.css.map": "/static/css/main.512fdac9.css.map",
-    "main.f88444d1.js.map": "/static/js/main.f88444d1.js.map"
+    "main.eb9d29b9.js.map": "/static/js/main.eb9d29b9.js.map"
   },
   "entrypoints": [
     "static/css/main.512fdac9.css",
-    "static/js/main.f88444d1.js"
+    "static/js/main.eb9d29b9.js"
   ]
 }
